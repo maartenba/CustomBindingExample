@@ -1,0 +1,14 @@
+﻿{
+    "extensions": [
+        {
+            "name": "Startup",
+            "typeName": "Microsoft.Azure.WebJobs.Extensions.FunctionMetadataLoader.Startup, Microsoft.Azure.WebJobs.Extensions.FunctionMetadataLoader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=551316b6919f366c",
+            "hintPath": "./.azurefunctions/Microsoft.Azure.WebJobs.Extensions.FunctionMetadataLoader.dll"
+        },
+        { 
+            "name": "CustomBindingExample", 
+            "typeName": "CustomBindingExample.Bindings.CustomBindingExampleStartup, CustomBindingExample.Bindings, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+            "hintPath": "./.azurefunctions/CustomBindingExample.Bindings.dll"
+        }
+    ]
+}

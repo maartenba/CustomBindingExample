@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;PhysicalFolder Path="C:\Users\maart\.nuget\packages\microsoft.azure.functions.worker.extensions.warmup\4.0.1" Loaded="True" /&gt;&#xD;
+  &lt;Assembly Path="C:\Users\maart\.nuget\packages\microsoft.azure.functions.worker.extensions.abstractions\1.0.0\lib\netstandard2.0\Microsoft.Azure.Functions.Worker.Extensions.Abstractions.dll" /&gt;&#xD;
+  &lt;PhysicalFolder Path="C:\Users\maart\.nuget\packages\microsoft.azure.functions.worker.extensions.cosmosdb\3.0.9" Loaded="True" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	
+	
+	</wpf:ResourceDictionary>

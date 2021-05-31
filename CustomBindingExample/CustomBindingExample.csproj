@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>preview</LangVersion>
+        <AzureFunctionsVersion>V3</AzureFunctionsVersion>
+        <OutputType>Exe</OutputType>
+        <_FunctionsSkipCleanOutput>true</_FunctionsSkipCleanOutput>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.0.13" />
+        <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Timer" Version="4.1.0" />
+        <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.0.3" OutputItemType="Analyzer" />
+        <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.2.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="host.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="local.settings.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+        </None>
+<!--        <None Update="extensions.json">-->
+<!--            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>-->
+<!--            <CopyToPublishDirectory>Never</CopyToPublishDirectory>-->
+<!--        </None>-->
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\CustomBindingExample.Bindings.Isolated\CustomBindingExample.Bindings.Isolated.csproj" />
+    </ItemGroup>
+
+<!--    <Target Name="_WorkerLocalExtensionsBuildCopy" AfterTargets="_WorkerExtensionsBuildCopy">-->
+<!--        <ItemGroup>-->
+<!--            <ExtensionBinaries Include="..\CustomBindingExample.Bindings\bin\**\CustomBindingExample.Bindings.*" -->
+<!--                               Exclude="..\CustomBindingExample.Bindings\bin\runtimes\**\*.*" />-->
+<!--            <ExtensionRuntimeBinaries Include="..\CustomBindingExample.Bindings\runtimes\**\*.*" />-->
+<!--            <ExtensionJsonFiles Include="extensions.json" />-->
+<!--        </ItemGroup>-->
+
+<!--        <Copy SourceFiles="@(ExtensionBinaries)" DestinationFolder="$(TargetDir)\.azurefunctions" />-->
+<!--        <Copy SourceFiles="@(ExtensionRuntimeBinaries)" DestinationFolder="$(TargetDir)\.azurefunctions\runtimes" />-->
+<!--        <Copy SourceFiles="@(ExtensionJsonFiles)" DestinationFolder="$(TargetDir)\.azurefunctions" />-->
+<!--    </Target>-->
+</Project>
